@@ -1,0 +1,320 @@
+ body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #0a0a0a;
+    color: #ffff;
+    overflow: hidden;
+ }
+
+ .main {
+    display: flex;
+    height: 100vh;
+    padding: 8px;
+ }
+
+ .sidebar {
+    background-color: black;
+    width: 340px;
+    height: 100vh;
+    border-radius: 1rem;
+    margin-right: 10px;
+ }
+
+ .main-content {
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+ }
+
+ .music-player {
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 72px;
+ }
+
+ .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px 12px;
+    border-radius: 1rem;
+    background-color: #121212;
+    height: 112px;
+ }
+
+ .nav-option {
+    line-height: 40px;
+    padding: 4px 12px;
+    font-weight: bold;
+    /* justify-content: center; */
+ }
+
+ .nav-option a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    margin-left: 16px;
+ }
+
+ .nav-option i {
+    color: white;
+    font-size: 1.26rem;
+ }
+
+ .search {
+    opacity: 0.6;
+ }
+
+ .search:hover {
+    transition: 0.3s;
+    opacity: 1;
+ }
+
+
+
+
+
+ .options {
+    line-height: 40px;
+    background-color: #121212;
+    border-radius: 1rem;
+    margin-top: 8px;
+    height: 100%;
+ }
+
+ .lib {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+ }
+
+
+ .library {
+    font-weight: bold;
+ }
+
+ .library span {
+    margin-left: 16px;
+ }
+
+ .library img {
+    width: 20px;
+    height: 20px;
+ }
+
+ .icons {
+    margin-left: 1rem;
+    display: flex;
+ }
+
+ .icons i {
+    margin-left: 1rem;
+    opacity: 0.6;
+
+ }
+
+ .icons i:hover {
+    opacity: 1;
+
+ }
+
+ .boxes {
+    margin: 5px;
+    /* height: 200px; */
+ }
+
+ .libbox {
+    /* border: 1px grey solid; */
+    background-color: #232323;
+    border-radius: 10px;
+
+ }
+
+ .libbox p {
+    padding: 7px 20px;
+    line-height: 20px;
+ }
+
+ .p1 {
+    /* padding-top: 15px; */
+    padding-top: 1665px;
+    font-weight: 600;
+    font-size: 18px;
+ }
+
+ .p2 {
+    opacity: 0.9;
+    font-size: 14px;
+
+ }
+
+ .badge {
+    border: none;
+    border-radius: 100px;
+    padding: 4px 10px;
+    height: 30px;
+    width: fit-content;
+    color: black;
+    font-weight: 700;
+ }
+
+ button {
+    margin: 0px 20px 20px;
+    /* color: white; */
+ }
+
+
+ /*  Sticy Nav */
+
+ .arrowicon {
+    width: 20px;
+    height: 20px;
+ }
+
+ .sticynav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    z-index: 2;
+ }
+
+ .navleft {
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .navright {
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .navright i {
+    margin-bottom: 14px;
+ }
+
+ .navleft img {
+    margin: 0px 10px;
+ }
+
+ .download {
+    color: white;
+    background-color: black;
+ }
+
+ .download i {
+    margin-right: 7px;
+ }
+
+ .cards {
+    /* display: flex; */
+    padding: 0 1rem;
+
+ }
+
+ .card {
+    background-color: #232323;
+    width: 150px;
+    border-radius: .5rem;
+    margin: 10px;
+    padding: 10px;
+ }
+
+ .card img {
+    width: 150px;
+    border-radius: .5rem
+ }
+
+ .card-container {
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+ .cardtitle {
+    font-size: 18px;
+    font-weight: 600;
+
+ }
+
+ .info {
+    font-size: 14px;
+    opacity: 0.9;
+ }
+
+
+ ::-webkit-scrollbar {
+    width: 15px;
+
+ }
+
+ ::-webkit-scrollbar-track {
+    background-color: #121212;
+ }
+
+ ::-webkit-scrollbar-thumb {
+    background-color: #121212;
+    border-radius: 10px;
+
+ }
+
+ ::-webkit-scrollbar-thumb:hover {
+    background-color: #232323;
+
+ }
+
+ .music-player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .left {
+    width: 25%;
+ }
+
+ .controlicons {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .controlicons img {
+    width: 16px;
+    height: 16px;
+    margin-left: 25px;
+    opacity: .7;
+
+ }
+
+ .controlicons img:hover {
+    opacity: 1;
+ }
+
+.range{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-left: -90px;
+   padding: 5px;
+
+}
+span{
+   font-size: 13px;
+   margin: 3px;
+
+}
+input{
+   width: 100%;
+}
